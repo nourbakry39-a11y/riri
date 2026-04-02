@@ -1,10 +1,7 @@
 <h1 id="h">riri malika</h1>
 <img src='1.bmp'/>
 <script>
-    fetch('https://tajrbrende.onrender.com')
-.then(r => r.json())
-.then(s => {
-    var h=document.getElementById('h');
-    h.innerHTML=s
-});
+fetch("https://tajrbrende.onrender.com/", { mode: "no-cors" })
+  .then(response => console.log(response))
+  .catch(err => console.error(err));
 </script>
